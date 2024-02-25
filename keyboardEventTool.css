@@ -1,0 +1,125 @@
+body {
+    font-family: Verdana;
+    background-color: wheat;
+    margin: 0;
+}
+
+body > div {
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 100vh;
+    width: 90%;
+}
+
+h1, p, th {
+    color: darkolivegreen;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+p.info-major, p.info-minor {
+    text-align: center;
+}
+
+p.info-major {
+    font-weight: 600;
+}
+
+td {
+    border-radius: 0.5rem; 
+}
+
+td.code, td.key {
+    background-color: wheat;
+}
+
+td.eventname.onkeydown {
+    background-color: aquamarine;
+}
+
+td.eventname.onkeyup {
+    background-color: aqua;
+}
+
+td.eventname.onfocus, td.eventname.onblur {
+    background-color: orange;
+}
+
+td.boolean-true {
+    background-color: lightpink;
+}
+
+td.boolean-false {
+    background-color: lightgreen;
+}
+
+td.location {
+    font-size: 0.75rem;
+}
+
+td.location-0 {
+    background-color: wheat;
+}
+
+td.location-1 {
+    background-color: cornsilk;
+}
+
+td.location-2 {
+    background-color: cornsilk;
+}
+
+td.location-3 {
+    background-color: yellow;
+}
+
+td.location-0:after {
+    content: ' = DOM_KEY_LOCATION_STANDARD'
+}
+
+td.location-1:after {
+    content: ' = DOM_KEY_LOCATION_LEFT'
+}
+
+td.location-2:after {
+    content: ' = DOM_KEY_LOCATION_RIGHT'
+}
+
+td.location-3:after {
+    content: ' = DOM_KEY_LOCATION_NUMPAD'
+}
+
+#keyboardEventScroller {
+    max-height: 80vh;
+    overflow: auto;
+    border: 1px dotted;
+}
+
+table#keyboardEventTable {
+    width: 100%;
+}
+
+table#keyboardEventTable tbody td {
+    text-align: center;
+}
+
+table#keyboardEventTable tbody tr {
+    animation: newrow 1s forwards;
+}
+
+@keyframes newrow {
+    0% { 
+        opacity: 1; 
+    }
+    30% {
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0.5; 
+    }
+}

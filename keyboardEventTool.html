@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="keyboardEventTool.js"></script>
+        <link rel="stylesheet" href="keyboardEventTool.css"/>
+    </head>
+    <body onkeydown="logKeyEvent('onkeydown', event)" onkeyup="logKeyEvent('onkeyup', event)"
+            onfocus="logFocusEvent('onfocus', event)" onblur="logFocusEvent('onblur', event)"><div>
+
+        <h1>Keyboard Event Tool</h1>
+
+        <div id="keyboardEventScroller"><table id="keyboardEventTable">
+            <thead>
+                <tr>
+                    <th>time</th>
+                    <th>event name</th>
+                    <th>.code</th>
+                    <th>.key</th>
+                    <th>.altKey</th>
+                    <th>.ctrlKey</th>
+                    <th>.metaKey</th>
+                    <th>.shiftKey</th>
+                    <th>.repeat</th>
+                    <th>.location</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table></div>
+
+        <p class="info-major">Press or hold down any key (or key combination) to see events logged above.</p>
+        <p class="info-minor">The log shows
+            <a href="https://www.w3schools.com/jsref/obj_keyboardevent.asp" target="_blank">keyboard event</a> details and
+            associated <a href="https://www.w3schools.com/jsref/obj_focusevent.asp" target="_blank">focus events</a>.
+        </p>
+
+    </div></body>
+</html>
